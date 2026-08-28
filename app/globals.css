@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-space-mono: 'Space Mono', monospace;
+}
+
+body {
+  color: #0F172A;
+  background-color: #FFFFFF;
+  font-family: var(--font-montserrat), 'Montserrat', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(0, 163, 224, 0.2);
+  color: #00A3E0;
+}
+
+/* Engineering Blueprint Visual Effects */
+.engineering-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+}
+
+.engineering-grid-dark {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 163, 224, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 163, 224, 0.06) 1px, transparent 1px);
+}
+
+.technical-border {
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.technical-border-dark {
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080C14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00A3E0;
+}
