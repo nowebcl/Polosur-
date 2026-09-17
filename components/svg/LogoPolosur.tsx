@@ -14,7 +14,7 @@ export const LogoPolosur: React.FC<LogoProps> = ({ className = 'h-14 sm:h-16', i
       <img
         src="/ultima.png"
         alt="Polosur Ingeniería"
-        className="h-full w-auto object-contain max-h-20 drop-shadow-md transition-transform duration-200 hover:scale-102"
+        className="h-full w-auto object-contain max-h-20 drop-shadow-md transition-transform duration-200 hover:scale-102 max-w-[180px] sm:max-w-none"
       />
     </div>
   );

@@ -24,15 +24,15 @@ export const ContactSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-3xl mb-14">
           <span className="text-polo-blue font-bold tracking-wider text-xs uppercase mb-2 block font-mono">
-            CONTACTO & COTIZACIONES
+            CONTACTO & PROPUESTAS
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-            SOLICITA TU ESTUDIO DE IMPACTO VIAL
+            SOLICITA TU EVALUACIÓN O PROPUESTA TÉCNICA
           </h2>
-          <p className="mt-4 text-sm text-gray-600 leading-relaxed font-normal">
-            Déjanos los detalles de tu proyecto y un ingeniero especialista de Polosur se pondrá en contacto en menos de 24 horas hábiles.
+          <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
+            ¿Quieres conocer en detalle nuestra forma de trabajar, revisar ejemplos de proyectos o solicitar una propuesta técnica y económica? Estamos disponibles para coordinar una reunión y analizar las particularidades de tu iniciativa.
           </p>
         </div>
 
@@ -43,27 +43,34 @@ export const ContactSection: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             
             {/* Contact Card 1: Direct Channels */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm space-y-5">
-              <h3 className="font-mono text-xs font-bold uppercase tracking-wider text-gray-900 border-b border-gray-100 pb-3">
-                CANALES DE ATENCIÓN DIRECTA
-              </h3>
+            <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8 shadow-sm space-y-5">
+              <div className="border-b border-gray-100 pb-3">
+                <span className="text-xs text-polo-blue font-mono font-bold uppercase tracking-wider block">
+                  CONTACTO DIRECTO
+                </span>
+                <h4 className="text-lg font-bold text-gray-900">
+                  Fernando Rolleri
+                </h4>
+              </div>
 
               <div className="space-y-4 text-sm">
                 <a
-                  href="tel:+56912345678"
+                  href="https://wa.me/56997728978"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-polo-blue transition-colors group p-2 rounded-lg hover:bg-slate-50"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-polo-blue flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-xs text-gray-400 block font-mono">TELÉFONO / WHATSAPP</span>
-                    <span className="font-bold text-gray-900">+56 9 1234 5678</span>
+                    <span className="font-bold text-gray-900">+56 9 9772 8978</span>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:contacto@polosur.cl"
+                  href="mailto:fernando.rolleri@polosuringenieria.cl"
                   className="flex items-center gap-3 text-gray-700 hover:text-polo-blue transition-colors group p-2 rounded-lg hover:bg-slate-50"
                 >
                   <div className="w-10 h-10 rounded-xl bg-blue-50 text-polo-blue flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -71,7 +78,7 @@ export const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-xs text-gray-400 block font-mono">CORREO ELECTRÓNICO</span>
-                    <span className="font-bold text-gray-900">contacto@polosur.cl</span>
+                    <span className="font-bold text-gray-900 text-xs sm:text-sm break-all">fernando.rolleri@polosuringenieria.cl</span>
                   </div>
                 </a>
 
@@ -80,9 +87,9 @@ export const ContactSection: React.FC = () => {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs text-gray-400 block font-mono">OFICINA CENTRAL</span>
-                    <span className="font-bold text-gray-900">Av. Providencia 1234, Of. 502</span>
-                    <span className="text-xs text-gray-500 block">Providencia, Santiago, Chile</span>
+                    <span className="text-xs text-gray-400 block font-mono">COBERTURA</span>
+                    <span className="font-bold text-gray-900">Trabajamos en todo Chile</span>
+                    <span className="text-xs text-gray-500 block">Proyectos inmobiliarios, comerciales, industriales y de infraestructura.</span>
                   </div>
                 </div>
 
@@ -91,8 +98,8 @@ export const ContactSection: React.FC = () => {
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs text-gray-400 block font-mono">HORARIO DE ATENCIÓN</span>
-                    <span className="text-xs text-gray-700">Lunes a Viernes: 08:30 a 18:30 hrs</span>
+                    <span className="text-xs text-gray-400 block font-mono">DISPONIBILIDAD</span>
+                    <span className="text-xs text-gray-700 font-medium">Respuesta rápida y coordinación de reuniones técnicas</span>
                   </div>
                 </div>
               </div>
@@ -104,8 +111,8 @@ export const ContactSection: React.FC = () => {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <span className="font-bold text-gray-900 block font-mono">COMPROMISO 24 HORAS</span>
-                <span className="text-gray-500">Evaluación de prefactibilidad y respuesta técnica inmediata.</span>
+                <span className="font-bold text-gray-900 block font-mono">COMPROMISO TÉCNICO</span>
+                <span className="text-gray-500">Claridad temprana de plazos y costos, sin sorpresas ni observaciones evitables.</span>
               </div>
             </div>
 
@@ -113,7 +120,7 @@ export const ContactSection: React.FC = () => {
 
           {/* Right Column: Dynamic Form (7 Cols) */}
           <div className="lg:col-span-7">
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-10 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-8 md:p-10 shadow-sm">
               
               <div className="flex items-center justify-between pb-4 mb-6 border-b border-gray-100 font-mono text-xs text-gray-500">
                 <span className="font-bold text-polo-blue flex items-center gap-1.5">
@@ -192,15 +199,14 @@ export const ContactSection: React.FC = () => {
                       <select
                         value={formData.studyType}
                         onChange={(e) => setFormData({ ...formData, studyType: e.target.value })}
-                        className="w-full bg-slate-50 border border-gray-200 focus:border-polo-blue focus:bg-white text-gray-900 p-3 rounded-lg outline-none transition-colors"
+                        className="w-full max-w-full truncate bg-slate-50 border border-gray-200 focus:border-polo-blue focus:bg-white text-gray-900 p-3 rounded-lg outline-none transition-colors"
                       >
-                        <option>IMIV Básico (&lt; 250 veh/h)</option>
-                        <option>IMIV Intermedio (250-800 veh/h)</option>
-                        <option>IMIV Mayor (&gt; 800 veh/h)</option>
-                        <option>Estudio de Movilidad Urbana</option>
-                        <option>Simulación VISSIM / Synchro</option>
-                        <option>Evaluación Ambiental (DIA / EIA)</option>
-                        <option>Diseño Geométrico & Pavimentos</option>
+                        <option>Transporte – IMIV Básico (Menor impacto)</option>
+                        <option>Transporte – IMIV Intermedio (Modelación TRANSYT 17)</option>
+                        <option>Medioambiente – Informes Viales para DIA</option>
+                        <option>Evaluación Inicial de Prefactibilidad IMIV</option>
+                        <option>Modelación de Tránsito TRANSYT 17</option>
+                        <option>Estudio de Movilidad Urbana & Accesos</option>
                       </select>
                     </div>
                     <div>

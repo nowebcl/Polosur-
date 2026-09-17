@@ -34,9 +34,9 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700/60 text-[#00A3E0] text-[11px] font-mono font-semibold tracking-wider uppercase mb-5 shadow-sm"
+            className="inline-flex items-center px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700/60 text-[#00A3E0] text-[11px] font-mono font-semibold tracking-wider uppercase mb-4 shadow-sm"
           >
-            <span>INGENIERÍA VIAL & SEIM MTT</span>
+            <span>POLOSUR INGENIERÍA • CHILE</span>
           </motion.div>
 
           {/* Refined & Clean Editorial Headline */}
@@ -44,43 +44,42 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.12] drop-shadow-sm"
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15] drop-shadow-md break-words"
           >
-            CONECTA <br />
+            INFORMES IMIV <br />
             <span className="text-[#00A3E0]">
-              SOLUCIONES
-            </span> <br />
-            CON MOVILIDAD
+              & ESTUDIOS VIALES
+            </span>
           </motion.h1>
 
-          {/* Clean Subtitle */}
+          {/* Clean Concise Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-5 text-sm sm:text-base text-slate-200 font-normal leading-relaxed max-w-lg drop-shadow"
+            className="mt-4 text-xs sm:text-base text-slate-200 font-normal leading-relaxed max-w-lg drop-shadow"
           >
-            Especialistas en Informes de Mitigación de Impacto Vial (IMIV) y Evaluación Ambiental para proyectos sostenibles, seguros y eficientes en Chile.
+            Especialistas en IMIV Básico e Intermedio para todo Chile. Mitigaciones realistas, costo-eficientes y tramitación ágil en el SEIM.
           </motion.p>
 
-          {/* Quick Feature Chips (Mobile App Style) */}
+          {/* Quick Feature Chips */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-6 flex flex-wrap gap-2 text-xs font-mono text-slate-300"
+            className="mt-6 flex flex-wrap gap-2 text-[10px] sm:text-xs font-mono text-slate-300"
           >
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0]" />
-              <span>Ley 20.958 (SEIM)</span>
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50 max-w-full">
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0] shrink-0" />
+              <span className="truncate">+100 Proyectos (97% Aprobación)</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0]" />
-              <span>Simulación VISSIM 3D</span>
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50 max-w-full">
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0] shrink-0" />
+              <span className="truncate">Certificación TRANSYT 17</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0]" />
-              <span>98% Aprobación</span>
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50 max-w-full">
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0] shrink-0" />
+              <span className="truncate">D.S. N° 30 SEIM</span>
             </div>
           </motion.div>
 
@@ -89,30 +88,32 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5"
+            className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto"
           >
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 font-mono text-xs uppercase tracking-wider font-bold px-7 py-3.5 bg-polo-blue hover:bg-polo-blue-dark text-white rounded-lg shadow-lg shadow-blue-500/25 transition-all active:scale-98 text-center group"
+              className="inline-flex items-center justify-center gap-2 font-mono text-xs uppercase tracking-wider font-bold px-6 py-3.5 bg-polo-blue hover:bg-polo-blue-dark text-white rounded-lg shadow-lg shadow-blue-500/25 transition-all active:scale-98 text-center group w-full sm:w-auto"
             >
               <FileText className="w-4 h-4" />
-              <span>COTIZAR INFORME IMIV</span>
+              <span>SOLICITAR IMIV</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
 
             <a
-              href="#servicios"
-              className="inline-flex items-center justify-center gap-2 font-mono text-xs uppercase tracking-wider font-bold px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 rounded-lg transition-all text-center"
+              href="https://wa.me/56997728978"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 font-mono text-[11px] sm:text-xs uppercase tracking-wider font-bold px-4 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white backdrop-blur-md border border-emerald-500/40 rounded-lg transition-all text-center shadow-lg shadow-emerald-900/20 w-full sm:w-auto"
             >
-              <span>EXPLORAR SERVICIOS</span>
+              <span>WHATSAPP (+56 9 9772 8978)</span>
             </a>
           </motion.div>
 
         </div>
       </div>
 
-      {/* Floating Scroll Down Indicator */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-slate-400 hover:text-white transition-colors cursor-pointer pb-6 md:pb-0">
+      {/* Floating Scroll Down Indicator (hidden on mobile to prevent overlapping bottom tab bar) */}
+      <div className="hidden sm:flex absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-1 text-slate-400 hover:text-white transition-colors cursor-pointer">
         <a href="#servicios" className="flex flex-col items-center">
           <span className="text-[10px] font-mono tracking-widest uppercase">Deslizar</span>
           <ChevronDown className="w-3.5 h-3.5 animate-bounce" />

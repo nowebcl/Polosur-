@@ -23,9 +23,15 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'POLOSUR INGENIERÍA | Informes IMIV & Ingeniería de Tránsito en Chile',
-  description: 'Consultora especializada en Informes de Mitigación de Impacto Vial (IMIV), simulación de tránsito (VISSIM/Synchro) y modelos de movilidad urbana en Chile. Aprobación SEIM.',
-  keywords: ['IMIV', 'Mitigación Impacto Vial', 'Ingeniería de Tránsito', 'SEIM', 'Chile', 'Polosur Ingeniería', 'VISSIM', 'Synchro', 'Ley 20.958'],
+  title: 'Polosur Ingeniería | IMIV Básico e Intermedio & Estudios Viales en Chile',
+  description: 'Consultora especializada en Informes de Mitigación de Impacto Vial (IMIV Básico e Intermedio) y estudios viales para todo Chile. Más de 100 proyectos con 97% de aprobación, certificación TRANSYT 17 y tramitación SEIM.',
+  keywords: ['IMIV Básico', 'IMIV Intermedio', 'Informes de Mitigación de Impacto Vial', 'Polosur Ingeniería', 'SEIM', 'TRANSYT 17', 'DS 30 MTT', 'Ley 20.958', 'DIA Informes Viales', 'Chile'],
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

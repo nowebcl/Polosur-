@@ -7,9 +7,9 @@ import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
   { name: 'INICIO', href: '/' },
-  { name: 'SERVICIOS', href: '/servicios' },
-  { name: 'PROYECTOS', href: '/proyectos' },
   { name: 'NOSOTROS', href: '/#nosotros' },
+  { name: 'SERVICIOS', href: '/#servicios' },
+  { name: 'NORMATIVA', href: '/#normativa' },
   { name: 'CONTACTO', href: '/#contacto' },
 ];
 
@@ -68,7 +68,7 @@ export const Navbar: React.FC = () => {
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
               <a
-                href="https://wa.me/56912345678"
+                href="https://wa.me/56997728978"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-full bg-[#00A3E0]/20 text-[#00A3E0] border border-[#00A3E0]/40 text-xs"
