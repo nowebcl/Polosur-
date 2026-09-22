@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ExternalLink, BookOpen, ShieldCheck, Scale, FileCode2 } from 'lucide-react';
+import { ExternalLink, BookOpen, ShieldCheck, Scale, FileCode2, FileText, Download, AlertCircle } from 'lucide-react';
 
 interface NormativeItem {
   title: string;
@@ -83,6 +83,125 @@ export const NormativeSection: React.FC = () => {
           <p className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
             Trabajamos bajo el marco legal vigente y mantenemos actualizado nuestro conocimiento de las normas que rigen los IMIV y los estudios viales en Chile. Consideramos permanentemente las resoluciones y fichas complementarias de medidas de mitigación obligatorias que dicta el MTT, así como las actualizaciones continuas del DS N° 30.
           </p>
+        </div>
+
+        {/* --- BLOQUE DESTACADO: ACTUALIZACIÓN NORMATIVA Y CONSULTA TRANSPARENCIA --- */}
+        <div className="mb-14 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-2 border-[#00A3E0]/40 rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden">
+          {/* Subtle glow accent */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#00A3E0]/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
+
+          {/* Top Row: Title, Subtitle, External Link */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-slate-800 relative z-10">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00A3E0]/10 border border-[#00A3E0]/30 text-[#00A3E0] text-[11px] font-mono font-semibold tracking-wider uppercase mb-3">
+                <AlertCircle className="w-3.5 h-3.5 text-[#00A3E0]" />
+                <span>PROCESO EN CURSO • MTT CHILE</span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight">
+                Actualización Normativa
+              </h3>
+              <p className="text-lg sm:text-xl font-semibold text-[#00A3E0] mt-1">
+                Modificación DS Nº30 /2017 del MTT.
+              </p>
+              <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed font-normal">
+                Participación ciudadana y observaciones sectoriales respecto al nuevo proceso de modificación al Decreto Supremo N° 30 de 2017 del Ministerio de Transportes y Telecomunicaciones.
+              </p>
+            </div>
+
+            <div className="shrink-0">
+              <a
+                href="https://www.subtrans.gob.cl/participacion-ciudadana/modificacion2026-ds30de2017/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#00A3E0] hover:bg-[#00A3E0]/90 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-lg shadow-[#00A3E0]/20 active:scale-98"
+              >
+                <span>VER PROCESO OFICIAL SUBTRANS</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Sub-bloque: Consulta Transparencia Polosur Ingeniería 2 */}
+          <div className="mt-8 relative z-10">
+            <div className="mb-6">
+              <span className="text-[#00A3E0] font-mono text-xs font-bold uppercase tracking-wider block mb-1">
+                PARTICIPACIÓN TÉCNICA & TRANSPARENCIA
+              </span>
+              <h4 className="text-lg sm:text-xl font-bold text-white leading-snug">
+                Consulta Transparencia Polosur Ingeniería 2 sobre modificación al DS Nº30/2017 del MTT
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-400 mt-1">
+                Documentos oficiales correspondientes a la recepción formal y respuestas del Ministerio:
+              </p>
+            </div>
+
+            {/* Grid of 2 Downloadable PDFs */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* PDF 1: Recepción de la Consulta */}
+              <div className="bg-slate-900/90 border border-slate-800 hover:border-[#00A3E0]/60 rounded-xl p-5 flex flex-col justify-between transition-all group">
+                <div className="flex items-start gap-3.5 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#00A3E0]/10 border border-[#00A3E0]/30 flex items-center justify-center shrink-0 text-[#00A3E0] group-hover:scale-105 transition-transform">
+                    <FileText className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#00A3E0] font-bold block mb-0.5">
+                      DOCUMENTO 1
+                    </span>
+                    <h5 className="text-sm font-bold text-white group-hover:text-[#00A3E0] transition-colors">
+                      Recepción de la Consulta
+                    </h5>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                      Comprobante de ingreso y recepción formal de consulta técnica emitida por Polosur Ingeniería 2 ante el MTT.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-3 border-t border-slate-800">
+                  <a
+                    href="/docs/recepcion-consulta-ds30-polosur.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-[#00A3E0] text-slate-200 hover:text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition-all"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>DESCARGAR / VER PDF</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* PDF 2: Respuestas a la Consulta */}
+              <div className="bg-slate-900/90 border border-slate-800 hover:border-[#00A3E0]/60 rounded-xl p-5 flex flex-col justify-between transition-all group">
+                <div className="flex items-start gap-3.5 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0 text-emerald-400 group-hover:scale-105 transition-transform">
+                    <FileText className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-400 font-bold block mb-0.5">
+                      DOCUMENTO 2
+                    </span>
+                    <h5 className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">
+                      Respuestas a la Consulta
+                    </h5>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                      Oficio y respuestas técnicas oficiales de la autoridad sectorial (MTT) a los requerimientos planteados.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-3 border-t border-slate-800">
+                  <a
+                    href="/docs/respuestas-consulta-ds30-polosur.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-emerald-500 text-slate-200 hover:text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition-all"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>DESCARGAR / VER PDF</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Normative Cards Grid */}

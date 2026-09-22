@@ -205,7 +205,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ data, isOpen, onClose 
           {/* Footer Action */}
           <div className="p-6 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-xs text-slate-500 font-mono">
-              ASESORÍA TÉCNICA DIRECTA POLOSUR INGENIERÍA
+              ASESORÍA TÉCNICA DIRECTA POLOSUR INGENIERÍA 2
             </div>
 
             <div className="flex items-center gap-3 w-full sm:w-auto">

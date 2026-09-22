@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700/60 text-[#00A3E0] text-[11px] font-mono font-semibold tracking-wider uppercase mb-4 shadow-sm"
           >
-            <span>POLOSUR INGENIERÍA • CHILE</span>
+            <span>POLOSUR INGENIERÍA 2 • CHILE</span>
           </motion.div>
 
           {/* Refined & Clean Editorial Headline */}
@@ -71,7 +71,7 @@ export const Hero: React.FC = () => {
           >
             <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50 max-w-full">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0] shrink-0" />
-              <span className="truncate">+100 Proyectos (97% Aprobación)</span>
+              <span className="truncate">95% de aprobación</span>
             </div>
             <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-700/50 max-w-full">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#00A3E0] shrink-0" />

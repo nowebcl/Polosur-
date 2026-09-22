@@ -26,7 +26,7 @@ const slides = [
     tag: 'EXPEDIENTES & MITIGACIÓN VIAL',
     title: 'Aprobación Integral en Plataforma SEIM MTT',
     desc: 'Elaboración rigurosa de Informes de Mitigación de Impacto Vial (IMIV Básico, Intermedio y Mayor) según la Ley 20.958, garantizando cero sobrecostos.',
-    stats: '98% Aprobación en 1ª Revisión Sectorial',
+    stats: '95% Aprobación en 1ª Revisión Sectorial',
     component: ApprovalWorkflowIllustration,
     icon: ShieldCheck,
   },

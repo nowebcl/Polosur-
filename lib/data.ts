@@ -39,12 +39,12 @@ export const servicesData: Record<string, ServiceItem> = {
     tag: 'LEY 20.958 / D.S. N° 30 MTT / SISTEMA SEIM',
     category: 'Ingeniería de Tránsito',
     shortDesc: 'Elaboramos y tramitamos IMIV Básico e IMIV Intermedio para proyectos inmobiliarios, comerciales, industriales y de infraestructura en todo Chile.',
-    longDesc: 'En Polosur Ingeniería elaboramos y tramitamos Informes de Mitigación de Impacto Vial (IMIV) en categorías Básico e Intermedio en todo el país. Identificamos desde el inicio las medidas de mitigación que serán exigibles para incorporarlas a tiempo en el diseño y en el presupuesto antes de tramitar en el SEIM, evitando sorpresas, observaciones innecesarias y sobrecostos.',
+    longDesc: 'En Polosur Ingeniería 2 elaboramos y tramitamos Informes de Mitigación de Impacto Vial (IMIV) en categorías Básico e Intermedio en todo el país. Identificamos desde el inicio las medidas de mitigación que serán exigibles para incorporarlas a tiempo en el diseño y en el presupuesto antes de tramitar en el SEIM, evitando sorpresas, observaciones innecesarias y sobrecostos.',
     specs: [
       { label: 'IMIV Básico', value: 'Medidas de mitigación obligatorias (accesos, veredas, estacionamientos, visibilidad) y expediente SEIM' },
       { label: 'IMIV Intermedio', value: 'Mediciones, caracterización actual, modelación de tránsito y mitigaciones obligatorias y adicionales' },
       { label: 'Modelación Certificada', value: 'Certificación oficial en TRANSYT 17 y herramientas actualizadas' },
-      { label: 'Tasa de Aprobación', value: '97% de aprobación en más de 100 proyectos desarrollados' },
+      { label: 'Tasa de Aprobación', value: '95% de aprobación' },
     ],
     methodology: [
       'Identificación temprana de medidas exigibles para incorporarlas al presupuesto y diseño del proyecto.',

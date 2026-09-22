@@ -199,7 +199,7 @@ export default async function ProyectoDetailPage({ params }: PageProps) {
                 ¿Desarrollas un proyecto similar?
               </h3>
               <p className="text-xs text-blue-100 leading-relaxed font-normal">
-                Cotiza el Informe de Mitigación Vial (IMIV) de tu obra con el equipo de Polosur Ingeniería.
+                Cotiza el Informe de Mitigación Vial (IMIV) de tu obra con el equipo de Polosur Ingeniería 2.
               </p>
 
               <Link

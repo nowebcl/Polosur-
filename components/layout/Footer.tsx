@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
 
         {/* Footer Bottom */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <p>© 2024 Polosur Ingeniería SpA. Todos los derechos reservados.</p>
+          <p>© 2024 Polosur Ingeniería 2 SpA. Todos los derechos reservados.</p>
           <div className="flex gap-4">
             <Link className="hover:text-white transition-colors" href="#">Política de Privacidad</Link>
             <span>|</span>

@@ -31,7 +31,7 @@ const reasons = [
   },
   {
     num: '06',
-    title: 'Más de 100 proyectos con 97% de aprobación',
+    title: '95% de aprobación',
     desc: 'Experiencia concreta y comprobada en la tramitación de Informes de Mitigación de Impacto Vial a lo largo de Chile.',
   },
 ];
@@ -50,7 +50,7 @@ export const AboutUs: React.FC = () => {
             POLOSUR INGENIERÍA 2
           </h2>
           <p className="mt-4 text-base text-gray-600 leading-relaxed font-normal">
-            En Polosur Ingeniería 2 nos dedicamos a la elaboración de <strong>Informes de Mitigación de Impacto Vial (IMIV)</strong> y a estudios viales asociados.
+            En Polosur Ingeniería 2 nos dedicamos a la elaboración de <strong>Informes de Mitigación de Impacto Vial (IMIV)</strong> y a informes viales asociados a DIA.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export const AboutUs: React.FC = () => {
               <ShieldCheck className="w-5 h-5 text-polo-blue shrink-0" />
               <div className="font-mono text-xs">
                 <span className="font-bold text-gray-900 block">+100 Proyectos Desarrollados</span>
-                <span className="text-gray-500">97% de aprobación</span>
+                <span className="text-gray-500">95% de aprobación</span>
               </div>
             </div>
           </div>

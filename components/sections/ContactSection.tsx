@@ -9,7 +9,7 @@ export const ContactSection: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    studyType: 'IMIV Intermedio (250-800 veh/h)',
+    studyType: 'Transporte IMIV Intermedio',
     comuna: '',
     message: '',
   });
@@ -137,7 +137,7 @@ export const ContactSection: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">¡Mensaje Enviado con Éxito!</h3>
                   <p className="text-xs sm:text-sm text-gray-600 max-w-md mx-auto leading-relaxed">
-                    Hemos recibido los datos de tu proyecto. Un ingeniero de Polosur se comunicará contigo a la brevedad.
+                    Hemos recibido los datos de tu proyecto. Un ingeniero de Polosur Ingeniería 2 se comunicará contigo a la brevedad.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
@@ -201,12 +201,9 @@ export const ContactSection: React.FC = () => {
                         onChange={(e) => setFormData({ ...formData, studyType: e.target.value })}
                         className="w-full max-w-full truncate bg-slate-50 border border-gray-200 focus:border-polo-blue focus:bg-white text-gray-900 p-3 rounded-lg outline-none transition-colors"
                       >
-                        <option>Transporte – IMIV Básico (Menor impacto)</option>
-                        <option>Transporte – IMIV Intermedio (Modelación TRANSYT 17)</option>
-                        <option>Medioambiente – Informes Viales para DIA</option>
-                        <option>Evaluación Inicial de Prefactibilidad IMIV</option>
-                        <option>Modelación de Tránsito TRANSYT 17</option>
-                        <option>Estudio de Movilidad Urbana & Accesos</option>
+                        <option>Transporte IMIV Básico</option>
+                        <option>Transporte IMIV Intermedio</option>
+                        <option>Informe Vial Para DIA</option>
                       </select>
                     </div>
                     <div>
@@ -231,8 +228,8 @@ export const ContactSection: React.FC = () => {
                       rows={3}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Indica m² construidos, número de estacionamientos estimados o detalles de la obra..."
-                      className="w-full bg-slate-50 border border-gray-200 focus:border-polo-blue focus:bg-white text-gray-900 p-3 rounded-lg outline-none transition-colors"
+                      placeholder="Uso de suelo /Clase/Proyecto (Ref. Art, 1.2.3 DecretoNº30)."
+                      className="w-full bg-slate-50 border border-gray-200 focus:border-polo-blue focus:bg-white text-gray-900 p-3 rounded-lg outline-none transition-colors placeholder:text-gray-400"
                     ></textarea>
                   </div>
 

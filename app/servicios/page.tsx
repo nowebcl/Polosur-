@@ -7,7 +7,7 @@ import { servicesData } from '@/lib/data';
 import { ArrowRight, CheckCircle2, ShieldCheck, Cpu, ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Servicios de Ingeniería de Tránsito & IMIV | Polosur Ingeniería',
+  title: 'Servicios de Ingeniería de Tránsito & IMIV | Polosur Ingeniería 2',
   description: 'Catálogo de servicios especializados en Informes de Mitigación Vial (IMIV), Simulación VISSIM, Evaluación Ambiental y Diseño Vial en Chile.',
 };
 

@@ -17,7 +17,7 @@ export const MetricsBanner: React.FC = () => {
 
           {/* Stat 2 */}
           <div className="text-center px-1 sm:px-4">
-            <div className="text-2xl sm:text-4xl lg:text-5xl font-bold text-polo-blue mb-1.5">97%</div>
+            <div className="text-2xl sm:text-4xl lg:text-5xl font-bold text-polo-blue mb-1.5">95%</div>
             <div className="font-bold text-gray-900 text-xs sm:text-sm">Tasa de aprobación</div>
             <div className="text-gray-500 text-[11px] sm:text-xs">ante la autoridad revisora</div>
           </div>

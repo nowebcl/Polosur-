@@ -8,7 +8,7 @@ import { LasCondesCAD, TemucoCAD, PlantaIndustrialCAD } from '@/components/svg/C
 import { ArrowRight, MapPin, Calendar, CheckCircle2, ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Proyectos & Casos de Estudio | Polosur Ingeniería',
+  title: 'Proyectos & Casos de Estudio | Polosur Ingeniería 2',
   description: 'Portafolio de Informes de Mitigación Vial (IMIV), Planes de Movilidad Urbana y Evaluaciones Ambientales aprobadas en Chile.',
 };
 
