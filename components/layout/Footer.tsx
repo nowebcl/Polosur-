@@ -121,8 +121,22 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center md:text-left">
           <p>© 2024 Polosur Ingeniería 2 SpA. Todos los derechos reservados.</p>
+
+          {/* Firma Desarrollador */}
+          <div className="flex items-center gap-1.5 font-mono text-xs">
+            <span className="text-gray-500">Desarrollado por</span>
+            <a
+              href="https://www.noweb.cl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-[#00A3E0] font-semibold transition-colors hover:underline"
+            >
+              @noweb.dev
+            </a>
+          </div>
+
           <div className="flex gap-4">
             <Link className="hover:text-white transition-colors" href="#">Política de Privacidad</Link>
             <span>|</span>
